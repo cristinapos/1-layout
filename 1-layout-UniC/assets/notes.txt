@@ -1,0 +1,3 @@
+Colors:
+- red (button): #be1623
+- text: #0c3249
