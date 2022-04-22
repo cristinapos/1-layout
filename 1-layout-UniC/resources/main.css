@@ -47,6 +47,10 @@ ul:first-child li:first-child a {
     background-color: #fff;
 }
 
+ul:first-child li:first-child a:hover {
+    color: #ecc42a;
+}
+
 a {
     outline: none;
     text-decoration: none;
@@ -97,6 +101,10 @@ section button {
     text-transform: uppercase;
     width: 20%;
     margin-top: 9em;
+    color:#fff;
+}
+section button:hover {
+    color: #ecc42a;
 }
 /*Footer*/
 footer {
