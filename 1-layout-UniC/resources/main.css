@@ -27,26 +27,28 @@ ul {
     justify-content: space-between;
     align-items: baseline;
 }
-ul:first-child li {
-    margin-right: 2em;
+ul > :first-child {
+    margin-right: 2.5em;
 }
 li {
     list-style: none;
     width: 7em;
     margin-bottom: 0;
 }
-li button {
+ul:first-child li:first-child a {
     border: none;
     cursor: pointer;
     border-radius: 25px;
     text-align: center;
-    padding: 0.5em;
-}
-li button a {
     color: #330379;
     font-size: 16px;
     font-weight: bold;
-    padding: 0.5em 1.5em;
+    padding: 0.4em 2em;
+    background-color: #fff;
+}
+
+ul:first-child li:first-child a:hover {
+    color: #ecc42a;
 }
 
 a {
@@ -79,9 +81,10 @@ h2 {
     font-weight:500;
 }
 div {
-    width: 25em;
+    width: 23em;
 }
 p {
+    line-height: 1.8;
     font-size: 0.9em;
     padding-bottom: 0.6em;
     color: rgba(255, 255, 255, 0.6)
@@ -98,6 +101,10 @@ section button {
     text-transform: uppercase;
     width: 20%;
     margin-top: 9em;
+    color:#fff;
+}
+section button:hover {
+    color: #ecc42a;
 }
 /*Footer*/
 footer {
