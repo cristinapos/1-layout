@@ -117,3 +117,208 @@ footer {
 img {
     width: 8em;
 }
+
+/*Contact*/
+.contact-main {
+    background: none;
+    height: unset;
+}
+.contact-header {
+    width: 100%;
+    background-image: url("../assets/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 0;
+    padding-top: 3em;
+}
+.contact-header > :first-child {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 3em 2em 3em;
+}
+
+.img-logo {
+    position: relative;
+    bottom: 0.5em;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 3em;
+    width: 100%;
+}
+.header-text h1 {
+    color: white;
+    border-bottom: 1px solid #ecc42a;
+    width: 40%;
+    margin-bottom: 0.2em;
+}
+
+.header-text p {
+    font-size: 36px;
+}
+
+.form-section {
+    display: flex;
+    align-items: center;
+    width: unset;
+    height: unset;
+    margin-left: 0;
+}
+
+form div {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 0 0.7em 0;
+}
+
+form div div{
+    border: 1px solid #BDBDBD;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 2em;
+}
+
+form > :first-child{
+    margin: 2em 0 0.7em 0;
+
+}
+
+form > :nth-child(3) {
+    padding-bottom: 2.5em;
+    border-bottom: 1px solid #330379;
+}
+
+form > :nth-child(4) {
+    padding-top: 2em;
+}
+
+form > :nth-child(4) label{
+    margin-bottom: 0.5em;
+}
+
+textarea {
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    background-color: #fff;
+    resize: none;
+    height: 8em;
+    margin-bottom: 1em;
+}
+
+i {
+    position: absolute;
+    color: #BDBDBD;
+    top: 6px;
+    left: 6px;
+    font-size: 18px;
+}
+
+input {
+    border: none;
+    width: 100%;
+    padding-left: 28px;
+}
+input:focus-visible {
+    outline: none !important;
+    border-color: #9E9E9E;
+    box-shadow: 0 0 8px #BDBDBD;
+}
+
+input::placeholder {
+    color: rgba(51, 3, 121, 0.8);
+}
+label {
+    color: #424242;
+}
+
+form > :nth-child(5) legend {
+    margin-bottom: 0.5em;
+}
+
+form > :nth-child(5) {
+    margin-bottom: 2em;
+}
+
+.check {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+input[type="checkbox"] {
+    width: unset;
+    appearance: none;
+    background-color: #fff;
+    padding-left: 0;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 1.3em;
+    height: 1.3em;
+    background-image: url("../assets/icon-unchecked.png");
+    background-size: cover;
+    z-index: 2;
+    display: inline-block;
+    
+}
+
+input[type="checkbox"]:checked:before {
+    background-image: url("../assets/icon-checked.png");
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttons p {
+    color: #330379;
+    padding-top: 0.5em;
+}
+
+.buttons p  span{
+    font-weight: bold;
+}
+
+.btn-contact {
+    text-align: center;
+    background-color: #330379;
+    width: 8em;
+    border-radius: unset;
+    padding: 0.5em 0;
+    font-weight: 100;
+    margin-top: 0;
+    border: none;
+    margin-right: 1em;
+}
+
+.contact-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 0;
+}
+
+.contact-footer h4 {
+    text-transform: uppercase;
+    color: #330379;
+}
+
+.contact-footer p {
+    text-transform: uppercase;
+    color: #ecc42a;
+    font-size: 12px;
+}
