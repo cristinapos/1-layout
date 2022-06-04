@@ -265,7 +265,7 @@ input[type="checkbox"] {
 input[type="checkbox"]::before {
     content: "";
     width: 1.5em;
-    height: 1.3em;
+    height: 1.5em;
     background-image: url("../assets/icon-unchecked.png");
     background-size: cover;
     z-index: 2;
@@ -283,13 +283,16 @@ input[type="checkbox"]:checked:before {
     justify-content: center;
 }
 
-.buttons p {
+.buttons div {
     color: #330379;
     padding-top: 0.5em;
+    border: none;
+    width: unset;
 }
 
-.buttons p  span{
+.buttons div  span{
     font-weight: bold;
+    margin-left: 0.5em;
 }
 
 .btn-contact {
@@ -312,13 +315,15 @@ input[type="checkbox"]:checked:before {
     margin-bottom: 0;
 }
 
-.contact-footer h4 {
+.contact-footer >:first-child {
     text-transform: uppercase;
     color: #330379;
+    width: unset;
 }
 
-.contact-footer p {
+.contact-footer >:last-child {
     text-transform: uppercase;
     color: #ecc42a;
     font-size: 12px;
+    width: unset;
 }
